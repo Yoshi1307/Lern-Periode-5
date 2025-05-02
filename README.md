@@ -6,12 +6,12 @@
 
 Wie können Sie Ihr Projekt aus der Lernperiode 4 um eine Persistenz-Lösung erweitern? Was gibt es zu speichern, was für Tabellen brauchen Sie und wie muss der bestehende Code mit diesen interagieren?
 
-> ...
+Um mein Projekt aus der Lernperiode 4 um eine Persistenz-Lösung zu erweitern füge ich eine Option ein, welche das Spiel Speichert. Gespeichert werden muss die Anzahl Cookies, die Stufen der Level und Preise und die CookiesPerSecond (CPS) wofür es auch Tabellen braucht.
 
 ## 2.5
 
-- [ ] ...
-- [ ] ...
+- [ ] Code mit Datenbank verbinden
+- [ ] Tabelle ERstellen und mit den nötigen Daten ausfüllen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
