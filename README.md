@@ -6,22 +6,20 @@
 
 Wie können Sie Ihr Projekt aus der Lernperiode 4 um eine Persistenz-Lösung erweitern? Was gibt es zu speichern, was für Tabellen brauchen Sie und wie muss der bestehende Code mit diesen interagieren?
 
-Um mein Projekt aus der Lernperiode 4 um eine Persistenz-Lösung zu erweitern füge ich eine Option ein, welche das Spiel Speichert. Gespeichert werden muss die Anzahl Cookies, die Stufen der Level und Preise und die CookiesPerSecond (CPS) wofür es auch Tabellen braucht.
+Um mein Projekt aus der Lernperiode 4 um eine Persistenz-Lösung zu erweitern füge ich eine Option ein, welche das Spiel Speichert. Gespeichert werden muss die Anzahl Cookies, die Stufen der Level und Preise und die CookiesPerSecond (CPS) wofür es eine Tabelle braucht. In der Tabelle werden die einzelnen Spalten hinzugefügt.
 
 ## 2.5
 
 - [ ] Code mit Datenbank verbinden
-- [ ] Tabelle ERstellen und mit den nötigen Daten ausfüllen
+- [X] Tabelle Erstellen und mit den nötigen Daten ausfüllen
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, Ihr bestehendes Projekt und die Neuerungen von heute hochzuladen. Beschreiben Sie eindeutig, was heute an Code dazugekommen ist.
+Heute habe ich zuerst probiert mit SQLite mein Code mit einer Datenbank zu verbinden. Diese Idee habe ich dann aber verworfen, weil ich es zu schlecht verstanden habe. Danach habe ich in MSSQLMS eine Datenbank erstellt. In die Datenbank habe ich alle Spalten die ich für meinen Cookie Clicker brauche hinzugefügt. In den Visual Studio Code habe ich noch nichts neues Reingeschrieben. Den Code habe ich noch nicht verbunden mit dem Code, da ich noch keine Zeit hatte es zu machen und noch nicht weiss wie es geht.
 
 ## 9.5 Kernfunktionalität
 
-- [ ] ... (dieses AP sollte zur Hälfte offline, also ohne Laptop zu bearbeiten sein — beispielsweise ein Datenmodell?)
-- [ ] ...
-- [ ] ...
+- [ ] Spielernamen Spalte in Datenbank hinzufügen
+- [ ] Datenbank mit Code verbinden
+- [ ] Option zum Namen geben im Spiel einfügen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
