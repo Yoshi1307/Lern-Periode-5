@@ -17,20 +17,20 @@ Heute habe ich zuerst probiert mit SQLite mein Code mit einer Datenbank zu verbi
 
 ## 9.5 Kernfunktionalität
 
-- [ ] Spielernamen Spalte in Datenbank hinzufügen
-- [ ] Datenbank mit Code verbinden
+- [X] Spielernamen Spalte in Datenbank hinzufügen
+- [X] Datenbank mit Code verbinden
 - [ ] Option zum Namen geben im Spiel einfügen
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich zuerst wieder angefangen, mein Programm mit Sqlite zu verbinden. Als Erstes habe ich die neue Datenbank erstellt. Danach habe ich den Code geschrieben, dass das Programm auf die Datenbank zugreifen kann. Als Nächstes habe ich neue Buttons in meinen Overlays hinzugefügt. Als Letztes habe ich noch eine längere Zeit probiert, Code zum Speicher zu schreiben. Ich weiss noch nicht, ob es funktioniert, aber ich denke noch nicht.
 
 ☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
 
 ## 16.5 Kernfunktionalität und Ausbau
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Speicher Option fertig machen
+- [ ] Spielstand laden Funktion Coden
+- [ ] Spielstand Löschen Funktion Coden
+- [ ] Option zum Namen geben im Spiel einfügen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
