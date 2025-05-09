@@ -1,3 +1,5 @@
+using Microsoft.Data.Sqlite;
+
 namespace Cookie_Clicker
 {
     public partial class Form1 : Form
@@ -10,11 +12,15 @@ namespace Cookie_Clicker
         public int CursorEarnings = 1;
         public int Level_autoclicker = 1;
         public int Level_cursor = 1;
+        public SqliteConnection connection;
+
 
 
         public Form1()
         {
             InitializeComponent();
+            connection = new SqliteConnection("Data Source=..\\..\\..\\Datenbank.db");
+            connection.Open();
 
         }
 
@@ -41,7 +47,7 @@ namespace Cookie_Clicker
             ShopForm.UpdateShopCookieCount();
             ShopForm.UpdateCookiesPer();
             ShopForm.LevelUpdater();
-           
+
 
         }
 
@@ -57,7 +63,7 @@ namespace Cookie_Clicker
 
         }
 
-        
+
 
         private void Double_Countdown_Click(object sender, EventArgs e)
         {
@@ -76,7 +82,27 @@ namespace Cookie_Clicker
 
         }
 
-        
-    }
+        private void Save_button_Click(object sender, EventArgs e)
+        {
+            string query = "UPDATE Spielstand SET " +
+                   "CookieCount = " + cookieCount + ", " +
+                   "AutoclickerEarnings = " + AutoclickerEarnings + ", " +
+                   "CursorEarnings = " + CursorEarnings + ", " +
+                   "Level_Autoclicker = " + Level_autoclicker + ", " +
+                   "Level_Cursor = " + Level_cursor + ", " +
+                   "Countdown2x = " + Countdown + ", " +
+                   "Zeitpunkt = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', " +
+                   "AnzahlKäufe = " + ShopForm.AnzahlKäufe + " " +
+                   "WHERE Spielstand_Name_Id = 'Save1'";
+            SqliteCommand cmd = new SqliteCommand(query, connection);
+            cmd.ExecuteNonQuery();
+        }
 
-} 
+        private void Load_Button_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+    }
+}

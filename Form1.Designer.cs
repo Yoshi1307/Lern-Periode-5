@@ -31,6 +31,9 @@
             button_cookie = new Button();
             cookies_count = new Label();
             button1 = new Button();
+            Save_button = new Button();
+            Load_Button = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button_cookie
@@ -70,6 +73,38 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // Save_button
+            // 
+            Save_button.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Save_button.Location = new Point(-1, -1);
+            Save_button.Name = "Save_button";
+            Save_button.Size = new Size(163, 41);
+            Save_button.TabIndex = 5;
+            Save_button.Text = "SAVE GAME";
+            Save_button.UseVisualStyleBackColor = true;
+            Save_button.Click += Save_button_Click;
+            // 
+            // Load_Button
+            // 
+            Load_Button.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Load_Button.Location = new Point(-1, 42);
+            Load_Button.Name = "Load_Button";
+            Load_Button.Size = new Size(163, 41);
+            Load_Button.TabIndex = 6;
+            Load_Button.Text = "LOAD GAME";
+            Load_Button.UseVisualStyleBackColor = true;
+            Load_Button.Click += Load_Button_Click;
+            // 
+            // button3
+            // 
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(-1, 85);
+            button3.Name = "button3";
+            button3.Size = new Size(163, 41);
+            button3.TabIndex = 7;
+            button3.Text = "RESET RUN";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -77,6 +112,9 @@
             BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(659, 450);
+            Controls.Add(button3);
+            Controls.Add(Load_Button);
+            Controls.Add(Save_button);
             Controls.Add(button1);
             Controls.Add(cookies_count);
             Controls.Add(button_cookie);
@@ -92,5 +130,8 @@
         private Button button_cookie;
         private Label cookies_count;
         private Button button1;
+        private Button Save_button;
+        private Button Load_Button;
+        private Button button3;
     }
 }
