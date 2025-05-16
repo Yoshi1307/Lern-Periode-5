@@ -46,6 +46,16 @@ namespace Cookie_Clicker
 
             UpdateShopCookieCount();
         }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                const int CS_NOCLOSE = 0x200;
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_NOCLOSE;
+                return cp;
+            }
+        }
 
         public void UpdateShopCookieCount()
         {
@@ -284,5 +294,21 @@ namespace Cookie_Clicker
 
         }
 
+        public void ResetUpgradePreise()
+        {
+            Preis_Autoklicker.Text = "500 🍪";
+            Preis_Cursor.Text = "50 🍪";
+            Preis_2x.Text = "1000 🍪";
+        }
+        public void ResetAutoclicker()
+        {
+            if (timer != null)
+            {
+                timer.Stop();
+            }
+
+        }
+
     }
+
 }

@@ -33,7 +33,7 @@
             button1 = new Button();
             Save_button = new Button();
             Load_Button = new Button();
-            button3 = new Button();
+            Reset_Button = new Button();
             SuspendLayout();
             // 
             // button_cookie
@@ -95,15 +95,16 @@
             Load_Button.UseVisualStyleBackColor = true;
             Load_Button.Click += Load_Button_Click;
             // 
-            // button3
+            // Reset_Button
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(-1, 85);
-            button3.Name = "button3";
-            button3.Size = new Size(163, 41);
-            button3.TabIndex = 7;
-            button3.Text = "RESET RUN";
-            button3.UseVisualStyleBackColor = true;
+            Reset_Button.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Reset_Button.Location = new Point(-1, 85);
+            Reset_Button.Name = "Reset_Button";
+            Reset_Button.Size = new Size(163, 41);
+            Reset_Button.TabIndex = 7;
+            Reset_Button.Text = "RESET GAME";
+            Reset_Button.UseVisualStyleBackColor = true;
+            Reset_Button.Click += Reset_Button_Click;
             // 
             // Form1
             // 
@@ -112,7 +113,7 @@
             BackgroundImage = Properties.Resources.simple_background_textured_wood_texture_wallpaper_preview;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(659, 450);
-            Controls.Add(button3);
+            Controls.Add(Reset_Button);
             Controls.Add(Load_Button);
             Controls.Add(Save_button);
             Controls.Add(button1);
@@ -132,6 +133,6 @@
         private Button button1;
         private Button Save_button;
         private Button Load_Button;
-        private Button button3;
+        private Button Reset_Button;
     }
 }

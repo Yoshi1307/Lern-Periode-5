@@ -218,9 +218,8 @@
             label2.Font = new Font("Segoe UI", 7F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(457, 1);
             label2.Name = "label2";
-            label2.Size = new Size(276, 19);
+            label2.Size = new Size(0, 19);
             label2.TabIndex = 19;
-            label2.Text = "Der Shop soll nicht geschlossen werden!";
             // 
             // Shop
             // 
