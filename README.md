@@ -23,23 +23,20 @@ Heute habe ich zuerst probiert mit SQLite mein Code mit einer Datenbank zu verbi
 
 Heute habe ich zuerst wieder angefangen, mein Programm mit Sqlite zu verbinden. Als Erstes habe ich die neue Datenbank erstellt. Danach habe ich den Code geschrieben, dass das Programm auf die Datenbank zugreifen kann. Als Nächstes habe ich neue Buttons in meinen Overlays hinzugefügt. Als Letztes habe ich noch eine längere Zeit probiert, Code zum Speicher zu schreiben. Ich weiss noch nicht, ob es funktioniert, aber ich denke noch nicht.
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
-
 ## 16.5 Kernfunktionalität und Ausbau
 
-- [ ] Speicher Option fertig machen
-- [ ] Spielstand laden Funktion Coden
-- [ ] Spielstand Löschen Funktion Coden
+- [X] Speicher Option fertig machen
+- [X] Spielstand laden Funktion Coden
+- [X] Spielstand Löschen Funktion Coden
 - [ ] Option zum Namen geben im Spiel einfügen
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+Heute habe ich als Erstes eine Pop-up-Meldung hinzugefügt, die zeigt, ob der Spielstand gespeichert wurde oder es einen Fehler gab. Als Nächstes habe ich den Load Game Button so konfiguriert, dass, wenn man drauf drückt, der zuletzt gespeicherte Spielstand geladen wird. Es werden alle Daten in die Variablen geladen und danach angezeigt. Als Nächstes habe ich den Reset-Button gemacht, mit dem man das Spiel zurücksetzen kann. Da werden alle Werte auf ihren Standardwert gesetzt und neu angezeigt. Dies muss man in einer Pop-up-Mitteilung bestätigen. Zum Schluss habe ich noch hinzugefügt, dass das Shopfenster von Anfang an geöffnet ist und der Fenster schliessen (X) Knopf gesperrt ist. 
 
 ## 23.5 Abschluss
 
-- [ ] ...
-- [ ] ... (falls Ihnen nichts einfällt: Können Sie mit einem PowerShell-Skript von Ihrer Datenbank regelmäßig ein *backup* erstellen?)
+- [ ] Abfrage ob man wirklich den Spielstand Speichern will
+- [ ] Abfrage ob man wirklich den Spielstand laden will
+- [ ] Versuchen dass der Autoklicker nach dem Laden eines Spielstandes direkt läuft
 - [ ] Reflexion über Ihre Arbeitsweise
 - [ ] Beschreibung des fertigen Projekts mit .gif etc.
 
