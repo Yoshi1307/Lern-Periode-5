@@ -34,20 +34,21 @@ Heute habe ich als Erstes eine Pop-up-Meldung hinzugefügt, die zeigt, ob der Sp
 
 ## 23.5 Abschluss
 
-- [ ] Abfrage ob man wirklich den Spielstand Speichern will
-- [ ] Abfrage ob man wirklich den Spielstand laden will
-- [ ] Versuchen dass der Autoklicker nach dem Laden eines Spielstandes direkt läuft
-- [ ] Reflexion über Ihre Arbeitsweise
+- [x] Abfrage ob man wirklich den Spielstand Speichern will
+- [x] Abfrage ob man wirklich den Spielstand laden will
+- [x] Versuchen dass der Autoklicker nach dem Laden eines Spielstandes direkt läuft
+- [x] Reflexion über Ihre Arbeitsweise
 - [ ] Beschreibung des fertigen Projekts mit .gif etc.
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen
+Heute habe ich damit begonnen, die Abfragen zum laden/speichern zu machen. Dies war nicht sehr schwer, da ich die Abfrage schon beim Zurücksetzen hatte. Als Letztes musste ich mir noch überlegen, wie ich den Autoklicker nach dem Spielstand laden zum laufen bringe. Nach etwas überlegen ist mir aufgefallen, dass es dasselbe wie beim 2x Upgrade Timer ist. Also habe ich einfach geschrieben, dass der Timer beim laden gestartet wird.
 
 ## Fertiges Projekt
 
-✍️ Beschreiben Sie hier, wie Ihr Projekt am Ende aussieht, und fügen Sie mindestens ein .gif ein.
+Mein Fertiges Projekt, ist der Cookie Clicker aus Lernperiode 4 mit einer angehänten Datenbank. Somit kann man jetzt den Spielstand Speichern, nach dem Schliessen des Programmes den gespeicherten Spielstand laden und den gesammten Spielstand reseten.
+
+![GIF LP5](https://github.com/user-attachments/assets/ef232700-774c-4d66-bdba-9ab2ba9de2d0)
+
 
 ## Reflexion
 
-✍️ Was ging gut, was ging weniger gut? Was haben Sie gelernt, und was würden Sie bei der nächsten Lernperiode versuchen besser zu machen? Fassen Sie auch einen übergeordneten Vorsatz für Ihr nächstes Jahr im Lernatelier (100 bis 200 Wörter).
+In der 5. Lernperiode lief es grundsätzlich sehr gut. Am Anfang habe ich zwar nicht wirklich verstanden, wie es funktionieren soll, was sich aber schnell geändert hat. Ich hatte anfangs Probleme mit dem Laden und Speichern von Daten. Nach etwas herumprobieren und Recherchieren habe ich langsam verstanden. Gelernt habe ich, wie man Daten aus einfachen Datenbanken ein- und herauslesen kann, sodass sie direkt im Spiel verwendet werden können. Ausserdem habe ich gelernt, wie man Messageboxen erstellt, da ich die vorher nicht gebraucht habe. Für die nächste Lernperiode und das nächste Jahr nehme ich mir vor, ordentlicher zu Arbeiten und den Variablen einfacher zuzuordnende Namen zu geben
