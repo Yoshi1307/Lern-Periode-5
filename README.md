@@ -44,11 +44,11 @@ Heute habe ich damit begonnen, die Abfragen zum laden/speichern zu machen. Dies 
 
 ## Fertiges Projekt
 
-Mein Fertiges Projekt, ist der Cookie Clicker aus Lernperiode 4 mit einer angehänten Datenbank. Somit kann man jetzt den Spielstand Speichern, nach dem Schliessen des Programmes den gespeicherten Spielstand laden und den gesammten Spielstand reseten.
+Mein fertiges Projekt ist der Cookie Clicker aus Lernperiode 4 mit einer angehängten Datenbank. Somit kann man jetzt den Spielstand speichern, nach dem Schliessen des Programmes den gespeicherten Spielstand laden und den gesamten Spielstand resetten. 
 
 ![GIF LP5](https://github.com/user-attachments/assets/ef232700-774c-4d66-bdba-9ab2ba9de2d0)
 
 
 ## Reflexion
 
-In der 5. Lernperiode lief es grundsätzlich sehr gut. Am Anfang habe ich zwar nicht wirklich verstanden, wie es funktionieren soll, was sich aber schnell geändert hat. Ich hatte anfangs Probleme mit dem Laden und Speichern von Daten. Nach etwas herumprobieren und Recherchieren habe ich langsam verstanden. Gelernt habe ich, wie man Daten aus einfachen Datenbanken ein- und herauslesen kann, sodass sie direkt im Spiel verwendet werden können. Ausserdem habe ich gelernt, wie man Messageboxen erstellt, da ich die vorher nicht gebraucht habe. Für die nächste Lernperiode und das nächste Jahr nehme ich mir vor, ordentlicher zu Arbeiten und den Variablen einfacher zuzuordnende Namen zu geben
+In der 5. Lernperiode lief es grundsätzlich sehr gut. Am Anfang habe ich zwar nicht wirklich verstanden, wie es funktionieren soll, was sich aber schnell geändert hat. Ich hatte anfangs Probleme mit dem Laden und Speichern von Daten. Nach etwas herumprobieren und Recherchieren habe ich langsam verstanden. Gelernt habe ich, wie man Daten aus einfachen Datenbanken ein- und herauslesen kann, sodass sie direkt im Spiel verwendet werden können. Ausserdem habe ich gelernt, wie man Messageboxen erstellt, da ich die vorher nicht gebraucht habe. Für die nächste Lernperiode und das nächste Jahr nehme ich mir vor, ordentlicher zu Arbeiten und den Variablen einfacher zuzuordnende Namen zu geben.
