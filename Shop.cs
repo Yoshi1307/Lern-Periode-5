@@ -16,7 +16,7 @@ namespace Cookie_Clicker
     {
 
         private Form1 mainForm;
-        private System.Windows.Forms.Timer timer;
+        public System.Windows.Forms.Timer timer;
         public System.Windows.Forms.Timer DoubleTimer;
         private System.Windows.Forms.Timer CountdownTimer;
 
@@ -46,7 +46,8 @@ namespace Cookie_Clicker
 
             UpdateShopCookieCount();
         }
-        protected override CreateParams CreateParams
+
+        protected override CreateParams CreateParams //Verbieten dass der Shop geschlossen werden kann
         {
             get
             {
@@ -307,6 +308,16 @@ namespace Cookie_Clicker
                 timer.Stop();
             }
 
+        }
+        public void ResetDoubleCountdown()
+        {
+            if (CountdownTimer != null)
+            {
+                CountdownTimer.Stop();
+                Countdown = 60;
+                if (Countdown_ != null)
+                    Countdown_.Text = "       -";
+            }
         }
 
     }

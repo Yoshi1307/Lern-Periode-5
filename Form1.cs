@@ -84,63 +84,86 @@ namespace Cookie_Clicker
 
         private void Save_button_Click(object sender, EventArgs e)
         {
-            string query = "UPDATE Spielstand SET " +
-                "CookieCount = " + cookieCount + ", " +
-                "AutoclickerEarnings = " + AutoclickerEarnings + ", " +
-                "CursorEarnings = " + CursorEarnings + ", " +
-                "Level_Autoclicker = " + Level_autoclicker + ", " +
-                "Level_Cursor = " + Level_cursor + ", " +
-                "Countdown2x = " + Countdown + ", " +
-                "Zeitpunkt = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', " +
-                "AnzahlKäufe = " + ShopForm.AnzahlKäufe + " " +
-                "WHERE Spielstand_Name_Id = 'Save1'";
+            var result = MessageBox.Show(
+                "Möchten Sie den Spielstand wirklich speichern?",
+                "Bestätigung",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
-            try
+            if (result == DialogResult.Yes)
             {
-                SqliteCommand cmd = new SqliteCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Spielstand gespeichert!", "Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Fehler beim Speichern des Spielstands: {ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string query = "UPDATE Spielstand SET " +
+                    "CookieCount = " + cookieCount + ", " +
+                    "AutoclickerEarnings = " + AutoclickerEarnings + ", " +
+                    "CursorEarnings = " + CursorEarnings + ", " +
+                    "Level_Autoclicker = " + Level_autoclicker + ", " +
+                    "Level_Cursor = " + Level_cursor + ", " +
+                    "Countdown2x = " + Countdown + ", " +
+                    "Zeitpunkt = '" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "', " +
+                    "AnzahlKäufe = " + ShopForm.AnzahlKäufe + " " +
+                    "WHERE Spielstand_Name_Id = 'Save1'";
+
+                try
+                {
+                    SqliteCommand cmd = new SqliteCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Spielstand gespeichert!", "Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Fehler beim Speichern des Spielstands: {ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
         private void Load_Button_Click(object sender, EventArgs e)
         {
-            string query = "SELECT CookieCount, AutoclickerEarnings, CursorEarnings, Level_Autoclicker, Level_Cursor, Countdown2x, AnzahlKäufe " +
-                           "FROM Spielstand WHERE Spielstand_Name_Id = 'Save1'";
+            var result = MessageBox.Show(
+                "Möchten Sie den Spielstand wirklich laden?",
+                "Bestätigung",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
-            try
+            if (result == DialogResult.Yes)
             {
-                using (SqliteCommand cmd = new SqliteCommand(query, connection))
-                using (SqliteDataReader reader = cmd.ExecuteReader())
+                string query = "SELECT CookieCount, AutoclickerEarnings, CursorEarnings, Level_Autoclicker, Level_Cursor, Countdown2x, AnzahlKäufe " +
+                               "FROM Spielstand WHERE Spielstand_Name_Id = 'Save1'";
+
+                try
                 {
-                    if (reader.Read())
+                    using (SqliteCommand cmd = new SqliteCommand(query, connection))
+                    using (SqliteDataReader reader = cmd.ExecuteReader())
                     {
-                        // WErte LAden
-                        cookieCount = reader.GetInt32(0);
-                        AutoclickerEarnings = reader.GetInt32(1);
-                        CursorEarnings = reader.GetInt32(2);
-                        Level_autoclicker = reader.GetInt32(3);
-                        Level_cursor = reader.GetInt32(4);
-                        Countdown = reader.GetInt32(5);
-                        ShopForm.AnzahlKäufe = reader.GetInt32(6);
+                        if (reader.Read())
+                        {
+                            // Werte laden
+                            cookieCount = reader.GetInt32(0);
+                            AutoclickerEarnings = reader.GetInt32(1);
+                            CursorEarnings = reader.GetInt32(2);
+                            Level_autoclicker = reader.GetInt32(3);
+                            Level_cursor = reader.GetInt32(4);
+                            Countdown = reader.GetInt32(5);
+                            ShopForm.AnzahlKäufe = reader.GetInt32(6);
 
-                        // WErte Anzeigen
-                        UpdateCookieCount();
-                        ShopForm.UpdateShopCookieCount();
-                        ShopForm.UpdateCookiesPer();
-                        ShopForm.LevelUpdater();
+                            // Werte anzeigen
+                            UpdateCookieCount();
+                            ShopForm.UpdateShopCookieCount();
+                            ShopForm.UpdateCookiesPer();
+                            ShopForm.LevelUpdater();
+                            ShopForm.timer.Start();
 
-                        MessageBox.Show("Spielstand geladen", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }  
+                            MessageBox.Show("Spielstand geladen", "Erfolg", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Kein Spielstand gefunden!", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Fehler beim Laden des Spielstands: {ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Fehler beim Laden des Spielstands: {ex.Message}", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -153,8 +176,8 @@ namespace Cookie_Clicker
                 MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
-            {   
-                //WErte Zurücksetzten
+            {
+                // Werte zurücksetzen
                 cookieCount = 0;
                 AutoclickerEarnings = 1;
                 CursorEarnings = 1;
@@ -165,6 +188,7 @@ namespace Cookie_Clicker
                 ShopForm.Countdown = 60;
                 ShopForm.ResetUpgradePreise();
                 ShopForm.ResetAutoclicker();
+                ShopForm.ResetDoubleCountdown(); 
                 ShopForm.UpdateShopCookieCount();
                 ShopForm.UpdateCookiesPer();
                 ShopForm.LevelUpdater();
