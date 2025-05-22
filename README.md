@@ -38,7 +38,7 @@ Heute habe ich als Erstes eine Pop-up-Meldung hinzugefügt, die zeigt, ob der Sp
 - [x] Abfrage ob man wirklich den Spielstand laden will
 - [x] Versuchen dass der Autoklicker nach dem Laden eines Spielstandes direkt läuft
 - [x] Reflexion über Ihre Arbeitsweise
-- [ ] Beschreibung des fertigen Projekts mit .gif etc.
+- [x] Beschreibung des fertigen Projekts mit .gif etc.
 
 Heute habe ich damit begonnen, die Abfragen zum laden/speichern zu machen. Dies war nicht sehr schwer, da ich die Abfrage schon beim Zurücksetzen hatte. Als Letztes musste ich mir noch überlegen, wie ich den Autoklicker nach dem Spielstand laden zum laufen bringe. Nach etwas überlegen ist mir aufgefallen, dass es dasselbe wie beim 2x Upgrade Timer ist. Also habe ich einfach geschrieben, dass der Timer beim laden gestartet wird.
 
